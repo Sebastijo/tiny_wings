@@ -1,6 +1,6 @@
 #pragma once
 
-class World{
+struct World{
     public:
         double getHeight(double x) const;
 };
