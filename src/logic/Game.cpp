@@ -14,15 +14,3 @@ void Game::run()
         render();
     }
 }
-
-void Game::processEvents() const
-{
-}
-
-void Game::update()
-{
-}
-
-void Game::render() const
-{
-}
