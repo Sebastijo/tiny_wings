@@ -1,7 +1,7 @@
 #include "logic/Game.hpp"
 
-Game::Game()
-    : m_player{0.0f, 0.0f, 0.0f, 0.0f}
+Game::Game(float q_x, float q_y, float p_x, float p_y)
+    : m_player{q_x, q_y, p_x, p_y}
 {
 }
 

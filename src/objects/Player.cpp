@@ -4,6 +4,7 @@ Player::Player(float q_x, float q_y, float p_x, float p_y)
     : m_q{q_x, q_y}, m_p{p_x, p_y}
 {
 }
+
 float Player::getSpeed() const
 {
     return Utils::norm(m_p);

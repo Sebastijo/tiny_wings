@@ -2,5 +2,4 @@
 
 void Game::render() const
 {
-    
 }
