@@ -1,8 +1,10 @@
 #pragma once
 
+#include <chrono>
 #include <SFML/Graphics.hpp>
 #include "objects/World.hpp"
 #include "objects/Player.hpp"
+#include "Config.hpp"
 
 class Game{
     public:
@@ -11,11 +13,10 @@ class Game{
 
     private:
         Player m_player;
-        World m_world {};
 
         bool isRunning {true};
 
         void processEvents() const;
-        void update();
+        void update(float dt);
         void render() const;
 };

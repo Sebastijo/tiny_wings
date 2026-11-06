@@ -7,10 +7,19 @@ Game::Game()
 
 void Game::run()
 {
+    std::chrono::steady_clock::time_point previousTime{std::chrono::steady_clock::now()};
     while (isRunning)
     {
+
         processEvents();
-        update();
+
+        std::chrono::steady_clock::time_point currentTime{std::chrono::steady_clock::now()};
+        float dt{std::chrono::duration<float>(
+                     currentTime - previousTime)
+                     .count()};
+
+        update(dt);
+        previousTime = currentTime;
         render();
     }
 }
