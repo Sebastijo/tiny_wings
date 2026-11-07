@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# SFML recommended 
+build
+out
+.cache
+.idea
+.vs
+.vscode
